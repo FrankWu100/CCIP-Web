@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CCIP Token Login</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript">
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+                return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+            
+            function jumpLoginPage(token) {
+                var href = "login.html?token=" + token;
+                if (document.getElementById('cb_QuickLogin').checked) {
+                    href += "&q=true"
+                }
+                window.location = href;
+            }
+            
+            window.onload = function () {
+                if (getParameterByName('q') == 'true') {
+                    document.getElementById('cb_QuickLogin').checked = true;
+                }
+            }
+        </script>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border-bottom: 1px solid #ddd;
+                padding: 5px;
+                text-align: left;
+            }
+            th {
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+            td {
+                vertical-align: bottom;
+            }
+
+            tr:nth-child(even) {background-color: #f2f2f2;}
+            tr:hover {background-color: #CCCCCC;}
+        </style>
+	</head>
+
+	<body>
+        <input type="checkbox" id="cb_QuickLogin" > Quick Login<br>
+
+        <table>
+            <tr><th>token</th><th>name</th><th>food type</th></tr><br>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">7679f08f7eaeef5e9a65a1738ae2840e</a></td><td>中文</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">ee33c408df4ffad0c55eaf6ec2420717</a></td><td>PATRICIA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">fccfc8bfa07643a1ca8015cbe74f5f17</a></td><td>LINDA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">93dc46e553ac602b0d6c6d7307e523f1</a></td><td>BARBARA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">2f574789271d26a0c569779e8348ab68</a></td><td>ELIZABETH</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">1a04f8728ffc11a4cdb9bc7dc79caac0</a></td><td>JENNIFER</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">d2ec0f1f28db8a4c1483c370953b9f0c</a></td><td>MARIA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">6520d6fa2fee26045104db0364a092e9</a></td><td>SUSAN</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">50ecac11d697bf76092bccde23607b27</a></td><td>MARGARET</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">125384b0058f0ce2d5aae8e80d94c5d7</a></td><td>DOROTHY</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">087e78bb1460e7ddbafd6a3e004f095e</a></td><td>LISA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">d38c9001982e5601f2d37a0401528754</a></td><td>NANCY</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">5d765c2e8c5243c0adc3af8495841f5d</a></td><td>KAREN</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">16e1dc90555abf7b5bf5781882982755</a></td><td>BETTY</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">1aadcabf9f47e932ea6245cfd51c02e8</a></td><td>HELEN</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">f1349e8156d2b05e23cf72d83a63c0f3</a></td><td>SANDRA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">bb0d74e19d0ce01d63af2bd6d44f06df</a></td><td>DONNA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">8c654d02c35a8040228c3fef4b25e9d4</a></td><td>CAROL</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">17bcb36a975e125f9cbea503a54603f0</a></td><td>RUTH</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">0c4facff3bc9879061b4eddb631339fe</a></td><td>SHARON</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">78e30e2397f1d8fda75eb930dd3dcf87</a></td><td>MICHELLE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">6a487514a78c67098054e07d1440c391</a></td><td>LAURA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">8a580a71b3c80199e6c7438618b4f030</a></td><td>SARAH</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">c7847acc730ad24412b68f5c9f5da851</a></td><td>KIMBERLY</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">aba94b39687829edef692a384dd698aa</a></td><td>DEBORAH</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">4ae0249680951e256954b0b67fddbcc1</a></td><td>JESSICA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">e9b4c7c9995d63993007a211b817ef68</a></td><td>SHIRLEY</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">222449320f2c14d54398f21bdbf253a2</a></td><td>CYNTHIA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">6edd6937afcabef71c0917d148811d54</a></td><td>ANGELA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">84b1701a3964056eb4bb85daee801522</a></td><td>MELISSA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">307b11ad88ae3897aadd6af42ba78d2d</a></td><td>BRENDA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">a4f07c20edb3ca71ba1457f2d79d90b7</a></td><td>AMY</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">99a3afda0f76109b04ae157c38f9fcb6</a></td><td>ANNA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">8145928fa6eb669cc201afd6b52a7f98</a></td><td>REBECCA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">85e13879cd70ee72532dc8823dbb503f</a></td><td>VIRGINIA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">48403a8ade71205cf92c1820deb7a962</a></td><td>KATHLEEN</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">e041d7afabeb71d69ad6bdac96d95575</a></td><td>PAMELA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">de0881a5824b9dba0925e5fdf15bf6bd</a></td><td>MARTHA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">4aa7cdc891898e1c74a810448f59102c</a></td><td>DEBRA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">ce41ae89b2ad073c6321bce05d563885</a></td><td>AMANDA</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">2d4acd203b335e400ef36ed4d34ee2e2</a></td><td>STEPHANIE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">e7f64b31340199985ee6803f8ab3b39e</a></td><td>CAROLYN</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">18eac5a3946862b8cd34e2d37c229b3d</a></td><td>CHRISTINE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">5382f8e7718f94736d850482e7ae8316</a></td><td>MARIE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">e64d153fa408cb4e74ea0bff3a7b4d2e</a></td><td>JANET</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">fc9db41221ac1b7403d185d58a44888e</a></td><td>CATHERINE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">b7edc7b7341bb77e611d8f1d0a643819</a></td><td>FRANCES</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">c4f9bde7cdb2099961cce496a2f7b0a8</a></td><td>ANN</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">c33c66ae4a39134b348dc4b619dc66e4</a></td><td>JOYCE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">1c75cd1c124e2ede9aefb8b45a89adee</a></td><td>DIANE</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">df779a8bb35387d8792c8823b30ce9ce</a></td><td>ALICE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">36186f7d89d81e4961742ebeaa669314</a></td><td>JULIE</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">9b7391abcc2384f7836f47bde388a961</a></td><td>HEATHER</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">3eb973079e7416b20a852ef96ebca612</a></td><td>TERESA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">9d869b8db3b79add3092642f2262f22a</a></td><td>DORIS</td><td>素</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">3f828284bb06d720cc8fede98db56bc6</a></td><td>GLORIA</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">d56eabaf6b0709ff718cd5977b787a8b</a></td><td>EVELYN</td><td>葷</td></tr>
+            <tr><td><a href="#" onclick="jumpLoginPage(this.text)">069b6e3c73e749684a7c34be84ecc547</a></td><td>JEAN</td><td>素</td>
+        </table>
+	</body>
+</html>
